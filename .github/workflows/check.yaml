@@ -2,7 +2,7 @@ name: check for appointment
 on:
   workflow_dispatch:
   schedule:
-    - cron: "* */6 * * *"
+    - cron: "* * * * *"
 
 jobs:
   build:
