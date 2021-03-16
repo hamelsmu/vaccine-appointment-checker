@@ -1,4 +1,4 @@
-# covid-scraper
+# vaccine-appointment-checker
 
 Apparently unused vaccines in the Portland, Oregon area are offered to the general public so they are not wasted.  
 
