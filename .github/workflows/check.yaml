@@ -19,4 +19,4 @@ jobs:
       env:
         TWILIO_ACCT_ID: ${{ secrets.TWILIO_ACCT_ID }}
         TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
-        #TEST_FLAG: "True"
+        TEST_FLAG: "True"
