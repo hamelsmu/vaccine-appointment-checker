@@ -1,0 +1,22 @@
+name: check for appointment
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "* */6 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+    - name: install dependencies
+      run: pip install requests bs4 twilio
+    - name: run check
+      run: python check.py
+      env:
+        TWILIO_ACCT_ID: ${{ secrets.TWILIO_ACCT_ID }}
+        TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
+        #TEST_FLAG: "True"
