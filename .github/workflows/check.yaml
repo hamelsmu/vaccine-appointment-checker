@@ -2,7 +2,7 @@ name: check for appointment
 on:
   workflow_dispatch:
   schedule:
-    - cron: "* * * * *"
+    - cron: "* * * * *" # This will only check every 5 minutes https://github.blog/changelog/2019-11-01-github-actions-scheduled-jobs-maximum-frequency-is-changing/
 
 jobs:
   build:
